@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">MyPortfolio</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#Certifications">Certifications</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button id="theme-toggle" aria-label="Toggle Dark Mode">🌙</button>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <h1>Hello, I'm <span>Suryansh Pandey</span></h1>
+    <p>A Web Developer & Data Analyst</p>
+    <a href="#projects" class="btn">View Projects</a>
+  </section>
+
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <p>I Am a IT student with a solid background in C++, Java, Python, and web development. Enthusiastic about software development, Data
+Analysis , problem-solving, and exploring new technologies. Experienced in creating small projects with MERN. I bring a strong
+problem-solving skills and have mastered Data
+Structures and Algorithms to an Intermediate level, consistently delivering optimized, responsive front-end experiences.
+Interested In Collection, analyzing , and interpretation of large datasets to drive data-informed business decisions. Developed
+dashboards, visualizations..</p>
+  </section>
+
+  <section id="projects" class="section">
+    <h2>Projects</h2>
+    <div class="projects-container">
+      <div class="project-card">
+        <h3>Smart Attendance Tracker using Face Recognition Technology</h3>
+        <p>Python,Opencv,Tkinter,MySQL, <br>Machine Learning,Face Recognition
+Developed a Python-based facial recognition attendance system with over 70-80% recognition accuracy.
+Integrated a MySQL database to securely store attendance records with real-time timestamps for each recognized individual.
+Designed and implemented an interactive GUI using Tkinter, enabling seamless registration and real-time attendance monitoring.
+Optimized face detection algorithms, improving system efficiency &performance under varying lighting,environmental conditions.</p>
+        <a href="https://github.com/Suryansh-7007/Face_Recognition_Project.git">View Code</a>
+      </div>
+      <div class="project-card">
+        <h3>Personal Blog App</h3>
+        <p>Node.js,MySQL,REST,React.js
+Developed a user-friendly personal blog application allowing users to create, edit & publish daily activity posts.
+Implemented intuitive navigation and responsive design, resulting in a 35% increase in user engagement.</p>
+        <a href="https://drive.google.com/file/d/1mCikq9bfQunIb6qZjBHeU2vl583NdCXU/view?usp=sharing">Live Demo</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="section">
+    <h2>Skills</h2>
+    <ul class="skills-list">
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>React</li>
+      <li>Node.js</li>
+      <li>C</li>
+      <li>C++</li>
+      <li>Python</li>
+      <li>Java</li>
+      <li>MySQL</li>
+      <li>Express JS</li>
+      <li>Git&nbsp;,GitHub&nbsp;,Vercel&nbsp;,Firebase</li>
+    </ul>
+  </section>
+  <section id="Certifications" class="section">
+    <h2>Certificates</h2>
+    <ol class="Certifications-list">
+      <li><h3>TechSaksham Internship on AI: Transformative Learning</h3></li>
+       <a href="https://drive.google.com/file/d/1Dgp4K0yuEnuibI8Padvp_Fr7WDKIQVkG/view?pli=1">Click Here</a>
+      <li><h3>IBM Certificates For Data science And Html,Css </h3></li>
+       <a href="https://drive.google.com/drive/folders/1E2OPfOiVww2aHdADp7uhvxB7CZQbKszf">Click Here</a>
+      <li><h3>Python Language</h3></li>
+       <a href="https://drive.google.com/file/d/1VDi5XcJ0rt8YHl9z3ezB1mk5EeVJ_DUK/view">Click Here</a>
+    </ol>
+  </section>
+
+  <section id="resume" class="section">
+    <h2>Resume</h2>
+    <a href="https://drive.google.com/file/d/1wdMeUt7QcGoURsbM4rG6lh4ivvkj5BBB/view?usp=drive_link" download class="btn">Download Resume</a>
+  </section>
+
+  <section id="contact" class="section contact-section">
+    <h2>Contact Me</h2>
+    <form action="#" method="post">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Suryansh Pandey. All rights reserved.</p>
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/suryanshpandey26">LinkedIn</a>
+      <a href="http://github.com/Suryansh-7007">GitHub</a>
+      <a href="#">Twitter</a>
+    </div>
+  </footer>
+
+  <script>
+    const toggleButton = document.getElementById('theme-toggle');
+    const body = document.body;
+
+    toggleButton.addEventListener('click', () => {
+      body.classList.toggle('dark-mode');
+      toggleButton.textContent = body.classList.contains('dark-mode') ? '☀️' : '🌙';
+    });
+  </script>
+</body>
+</html>
